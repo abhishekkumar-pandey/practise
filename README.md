@@ -1,4 +1,153 @@
-<?xml version="1.0" encoding="utf-8"?><feed xml:base="https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/_api/" xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.opengis.net/gml"><id>362801bd-2890-46f2-8ba9-4cbc8e9e37bb</id><title /><updated>2026-08-21T12:34:49Z</updated><entry m:etag="&quot;331&quot;"><id>6140c53e-68e5-406f-a960-52a3fa321116</id><category term="SP.Data.PORLISTHCLListItem" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" /><link rel="edit" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FirstUniqueAncestorSecurableObject" type="application/atom+xml;type=entry" title="FirstUniqueAncestorSecurableObject" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/FirstUniqueAncestorSecurableObject" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/RoleAssignments" type="application/atom+xml;type=feed" title="RoleAssignments" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/RoleAssignments" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/AttachmentFiles" type="application/atom+xml;type=feed" title="AttachmentFiles" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/AttachmentFiles" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ContentType" type="application/atom+xml;type=entry" title="ContentType" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/ContentType" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/GetDlpPolicyTip" type="application/atom+xml;type=entry" title="GetDlpPolicyTip" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/GetDlpPolicyTip" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FieldValuesAsHtml" type="application/atom+xml;type=entry" title="FieldValuesAsHtml" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/FieldValuesAsHtml" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FieldValuesAsText" type="application/atom+xml;type=entry" title="FieldValuesAsText" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/FieldValuesAsText" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/FieldValuesForEdit" type="application/atom+xml;type=entry" title="FieldValuesForEdit" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/FieldValuesForEdit" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/File" type="application/atom+xml;type=entry" title="File" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/File" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Folder" type="application/atom+xml;type=entry" title="Folder" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/Folder" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/LikedByInformation" type="application/atom+xml;type=entry" title="LikedByInformation" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/LikedByInformation" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/ParentList" type="application/atom+xml;type=entry" title="ParentList" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/ParentList" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Properties" type="application/atom+xml;type=entry" title="Properties" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/Properties" /><link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Versions" type="application/atom+xml;type=feed" title="Versions" href="Web/Lists(guid'e7b630ef-6787-4dca-87ab-a1b73de99ba1')/Items(418)/Versions" /><title /><updated>2026-08-21T12:34:49Z</updated><author><name /></author><content type="application/xml"><m:properties><d:FileSystemObjectType m:type="Edm.Int32">0</d:FileSystemObjectType><d:Id m:type="Edm.Int32">418</d:Id><d:ServerRedirectedEmbedUri m:null="true" /><d:ServerRedirectedEmbedUrl></d:ServerRedirectedEmbedUrl><d:ContentTypeId>0x0100C4226771931E654BA41B6535A1A372C1</d:ContentTypeId><d:Title>C/303454</d:Title><d:OData__ColorTag m:null="true" /><d:ComplianceAssetId m:null="true" /><d:Purchase_Type>RENTAL</d:Purchase_Type><d:Project_Code_Cost_Centre_Code>C/303454</d:Project_Code_Cost_Centre_Code><d:Renewal_YES_No>yes</d:Renewal_YES_No><d:Business_Justification>*License Ownership;N/A
-*License type:N/A
-It is a necessary rental product to carry out this project.
-PROLIANT BL460C GEN9/1P 11months</d:Business_Justification><d:Justification_for_not_using_inte m:null="true" /><d:Billable_Non_Billable>Billable</d:Billable_Non_Billable><d:Details_of_Product_Services>契約番号1000-0001-0080-1704</d:Details_of_Product_Services><d:Delivery_Country>Japan</d:Delivery_Country><d:PM_Email>kohei.tajima@hcltech.com</d:PM_Email><d:Vendor_Name>1100050563 - ORIX RENTEC CORPORATION</d:Vendor_Name><d:Vendor_Billing_cycle>Monthly</d:Vendor_Billing_cycle><d:Is_migrating_to_HCL_competitive_ m:null="true" /><d:Payment_Term_with_Customer m:null="true" /><d:Payment_Term_with_Vendor m:type="Edm.Double">45</d:Payment_Term_with_Vendor><d:Project_Country>Japan</d:Project_Country><d:Customer_Name>SOFTBANK CORP.</d:Customer_Name><d:Margin_x0025_>0.35</d:Margin_x0025_><d:Planned_Revenue>220216.26</d:Planned_Revenue><d:Over_all_cost_of_Project>143143.83</d:Over_all_cost_of_Project><d:Cost_till_date>143143.83</d:Cost_till_date><d:Customer_PO_Number>957630</d:Customer_PO_Number><d:Forecast_Revenue m:null="true" /><d:Revenue_Billed_till_date_in_USD>NaN</d:Revenue_Billed_till_date_in_USD><d:PO_Released_till_date>NaN</d:PO_Released_till_date><d:License_Ownership>HCL</d:License_Ownership><d:license_deployed_location>N/A</d:license_deployed_location><d:license_type_Perpetual_Exit>No</d:license_type_Perpetual_Exit><d:License_number_IF_SINGLE_ATTACH_>N/A</d:License_number_IF_SINGLE_ATTACH_><d:Old_PO_Number>9200138685</d:Old_PO_Number><d:Quote_expiration_date m:null="true" /><d:Quote_Value m:null="true" /><d:po_Currency>JPY</d:po_Currency><d:Use_case_internal_customer m:null="true" /><d:PO_address_location_entity m:null="true" /><d:Procurement_Quantity m:type="Edm.Double">1</d:Procurement_Quantity><d:Skills m:null="true" /><d:Resource_details_TM_TP m:null="true" /><d:Project_Region>Japan</d:Project_Region><d:PO_Start_Date m:type="Edm.DateTime">2025-04-29T07:00:00Z</d:PO_Start_Date><d:PO_End_Date m:type="Edm.DateTime">2026-03-29T07:00:00Z</d:PO_End_Date><d:ATF>yes</d:ATF><d:PO_Value_LC m:type="Edm.Double">491700</d:PO_Value_LC><d:Resource_First_Name m:null="true" /><d:Resource_Last_Name m:null="true" /><d:Resource_Email_ID m:null="true" /><d:Total_Relevant_Experience m:null="true" /><d:DOB m:null="true" /><d:Gender m:null="true" /><d:Laptop_Requirement m:null="true" /><d:Work_Location m:null="true" /><d:Shipping_Address m:null="true" /><d:Proj_end_date m:type="Edm.DateTime">2026-03-31T07:00:00Z</d:Proj_end_date><d:TP_Planned_Cost>49896.78</d:TP_Planned_Cost><d:TP_Consumed_till_date>NaN</d:TP_Consumed_till_date><d:Validationsts>VALIDATED</d:Validationsts><d:ResourceBrokerApproval>APPROVED</d:ResourceBrokerApproval><d:Validationcmmts m:null="true" /><d:ResBrkApproval m:null="true" /><d:DELIVERYLEADAPPROVAL>APPROVED</d:DELIVERYLEADAPPROVAL><d:DELIVERYLEADAPPROVALCMMTS m:null="true" /><d:PracticeLeadApproval>APPROVED</d:PracticeLeadApproval><d:Practiceleadapprcmmts m:null="true" /><d:ResourceBrokerApproveddate m:type="Edm.DateTime">2025-05-14T07:00:00Z</d:ResourceBrokerApproveddate><d:DeliveryApprdate m:type="Edm.DateTime">2025-05-14T07:00:00Z</d:DeliveryApprdate><d:PracticeApprdate m:type="Edm.DateTime">2025-05-14T07:00:00Z</d:PracticeApprdate><d:Regionalclientapproval>APPROVED</d:Regionalclientapproval><d:Rgccmmts m:null="true" /><d:RegionalClietnApprdate m:type="Edm.DateTime">2025-05-14T07:00:00Z</d:RegionalClietnApprdate><d:Validateddate m:type="Edm.DateTime">2025-05-14T07:00:00Z</d:Validateddate><d:Flowstatus>COMPLETED</d:Flowstatus><d:PreviousFlowstatus>MAILTOAPPR4SENT</d:PreviousFlowstatus><d:Trigger_number m:null="true" /><d:PR_Number>PR617998</d:PR_Number><d:PR_Remarks>Ordered</d:PR_Remarks><d:PR_Value m:null="true" /><d:PR_Version m:null="true" /><d:PR_Created_date m:type="Edm.DateTime">2025-05-26T07:00:00Z</d:PR_Created_date><d:PR_Status>PO Released</d:PR_Status><d:PR_Comments m:null="true" /><d:PR_Approver>Approved</d:PR_Approver><d:PO_Issued_date m:type="Edm.DateTime">2025-06-10T07:00:00Z</d:PO_Issued_date><d:PO_Number>9200141292</d:PO_Number><d:Cons_ID m:null="true" /><d:Region_ID>N-Japan-H418</d:Region_ID><d:Edit_form m:type="SP.FieldUrlValue"><d:Description>https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/SitePages/Edit_1.aspx?=418</d:Description><d:Url>https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/SitePages/Edit_1.aspx?=418</d:Url></d:Edit_form><d:Project_Name>JP2-C7856 9W E_FY25_ MaintenanceGihon_EF</d:Project_Name><d:Project_Manager m:null="true" /><d:Biz_Area m:null="true" /><d:Solution_Family m:null="true" /><d:Project_End_Date m:null="true" /><d:Fully_Approved m:null="true" /><d:PODNAME>Yamato,Akemi</d:PODNAME><d:VMTCONSSTS m:null="true" /><d:Editlinkpart1>https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/SitePages/Edit_1.aspx?=</d:Editlinkpart1><d:Editttt>https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/SitePages/Edit_1.aspx?=</d:Editttt><d:MailtoResbrk m:null="true" /><d:mailtodeliverylead m:null="true" /><d:mailtopracticelead m:null="true" /><d:mailtorgcm m:null="true" /><d:POFor>JP_NAVS_JP</d:POFor><d:PO_Value_USD>3441.9</d:PO_Value_USD><d:fl_EmailtoAppr1sent>YES</d:fl_EmailtoAppr1sent><d:fl_EmailtoAppr2sent m:null="true" /><d:fl_EmailtoAppr3sent>YES</d:fl_EmailtoAppr3sent><d:fl_EmailtoAppr4sent>YES</d:fl_EmailtoAppr4sent><d:fl_EmailtoAppr1clarify m:null="true" /><d:fl_EmailtoAppr2clarify m:null="true" /><d:fl_EmailtoAppr3clarify m:null="true" /><d:fl_EmailtoAppr4clarify m:null="true" /><d:fl_EmailtoAppr1Denied m:null="true" /><d:fl_EmailtoAppr2Denied m:null="true" /><d:fl_EmailtoAppr3Denied m:null="true" /><d:fl_EmailtoAppr4Denied m:null="true" /><d:Approval_Counter>5</d:Approval_Counter><d:fl_EmailtoVMTsent>YES</d:fl_EmailtoVMTsent><d:fl_EmailtoVMTClarify m:null="true" /><d:fl_EmailtoPOD>YES</d:fl_EmailtoPOD><d:Sub_purchase_Type>Rental charges for Servers &amp; Compute</d:Sub_purchase_Type><d:POname m:null="true" /><d:POlocation>https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/POcopies/9200141292.pdf</d:POlocation><d:ReqType>BP-TOOL-N</d:ReqType><d:PORequestAttchmentsLink>https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/AttachmentsLibrary/N-Japan-H418</d:PORequestAttchmentsLink><d:Resource_Captured m:null="true" /><d:Current_x0020_month>Jul</d:Current_x0020_month><d:CONSOLIDATEDID>Jul-1100050563 - ORIX RENTEC CORPORATION-RENTAL</d:CONSOLIDATEDID><d:VMTPODSTS m:null="true" /><d:CONSID>May-1100050563 - ORIX RENTEC CORPORATION-RENTAL</d:CONSID><d:Resource_mapping_link>https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/SitePages/ResourceView.aspx?project=418</d:Resource_mapping_link><d:fl_Resource_Count m:null="true" /><d:Pending_HC>1.00000000000000</d:Pending_HC><d:Quotation_Number>1000-0000-0579-9901-000</d:Quotation_Number><d:Vendor_identified>yes</d:Vendor_identified><d:Standard_vendor_PT m:null="true" /><d:Regular_identified m:null="true" /><d:Regular_Resources m:null="true" /><d:Sum_of_FTE m:null="true" /><d:ID_Copy>418</d:ID_Copy><d:Appr1Mail_trigger>ahmad.badri@hcltech.com</d:Appr1Mail_trigger><d:Appr2Mail_trigger m:null="true" /><d:Appr3Mail_trigger>kana.ha@hcltech.com</d:Appr3Mail_trigger><d:Appr4Mail_trigger>tetsuya.ishimoto@hcltech.com</d:Appr4Mail_trigger><d:POD_Mail>akemi.yamato@hcltech.com</d:POD_Mail><d:Proj_start_Date m:null="true" /><d:Planned_Revenue_LC m:null="true" /><d:Planned_cost_Lc m:null="true" /><d:Planned_3P_LC m:null="true" /><d:Customeer_billing_Cycle m:null="true" /><d:Vendor_code_Ariba>1100050563</d:Vendor_code_Ariba><d:PO_START_DATE_TEXT>2025-04-30</d:PO_START_DATE_TEXT><d:PO_END_Date_Text>2026-03-30</d:PO_END_Date_Text><d:CreatedbyEmail>akemi.yamato@hcltech.com</d:CreatedbyEmail><d:Bill_to_country m:null="true" /><d:fl_Mailtocompleted>YES</d:fl_Mailtocompleted><d:Current_Approver m:null="true" /><d:PO_START_FISCAL_YEAR>FY26</d:PO_START_FISCAL_YEAR><d:PO_START_FISCAL_QTR>Q1</d:PO_START_FISCAL_QTR><d:ATF_Justification m:null="true" /><d:PO_Start_Month>Apr'25</d:PO_Start_Month><d:Request_pending_Status>PO_Released</d:Request_pending_Status><d:VENDOR_ID m:null="true" /><d:ProjectType m:null="true" /><d:Prj_Company_code m:null="true" /><d:SoftwareName m:null="true" /><d:SoftwareVendorurl m:null="true" /><d:RITM_ID m:null="true" /><d:ExpectedDeliveryDate m:null="true" /><d:PR_Approver_Automated>Approved</d:PR_Approver_Automated><d:PO_Issued_date_Automated>06/10/2025</d:PO_Issued_date_Automated><d:PO_Number_Automated>9200141292</d:PO_Number_Automated><d:Vendor_code_automated>1100050563</d:Vendor_code_automated><d:Ariba_PR_Status_Automated>Ordered</d:Ariba_PR_Status_Automated><d:Quote_Received_Zerovalue m:null="true" /><d:Productname_service_used m:null="true" /><d:Project_Phase m:null="true" /><d:Interim m:null="true" /><d:ATF_Reason m:null="true" /><d:Reg_ID_formula>N-Japan-H418</d:Reg_ID_formula><d:Margin_on_3P_purchase_only m:null="true" /><d:Ariba_Pending_Approver m:null="true" /><d:ProjL4_Orgname>Japan_projects</d:ProjL4_Orgname><d:Modified m:type="Edm.DateTime">2026-07-22T02:49:31Z</d:Modified><d:Excalibur_ID m:null="true" /><d:ID m:type="Edm.Int32">418</d:ID><d:Created m:type="Edm.DateTime">2025-05-14T00:25:54Z</d:Created><d:AuthorId m:type="Edm.Int32">612</d:AuthorId><d:EditorId m:type="Edm.Int32">608</d:EditorId><d:OData__UIVersionString>331.0</d:OData__UIVersionString><d:Attachments m:type="Edm.Boolean">false</d:Attachments><d:GUID m:type="Edm.Guid">32bbcd86-97bc-453b-8bd7-1754bc2e7351</d:GUID></m:properties></content></entry><link rel="next" href="https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/_api/web/lists/getbytitle(%27PORLISTHCL%27)/items?%24skiptoken=Paged%3dTRUE%26p_ID%3d418&amp;%24top=1" /></feed>
+# steps that i came up with after the meeting
+Process Automation Steps (BP Tool VMT automation) 
+We receive a request for a specific region id – ex: N-Japan-H3573
+STEP 1: Chek the attached attachments and the BPTool Data Matching or Not
+1.1 Quotation ID matching or not
+1.	Check what all the documents that they have uploaded
+2.	The quotation id is supposed(we can see the quotation number in PORLIST table) to match with the copy of the document provided
+
+1.2: PO start date and End date (PO Duration)
+1.	The Date present in the attached document should match with the dates present in the BPTOOL List
+Start Date,  End Date
+
+1.3: PO Value
+1.	The po value should match i.e in quotation and in the BPTool the PO values should match
+PO_value_LC
+
+1.4 Quote Validity
+•	If the date is future date then there is no problem 
+•	If the PO start Date is in past then it is ATF request we need write them the mail asking for the regional lead approval (why there is delay in raisinf the request as the PO start date is in past)
+  
+ATF Approval Request - Within Same Month
+Japan & APeJ - Ishimoto-San
+EMEA - Alessando Perot
+AMS - Joseph Lyhn
+ 
+ATF Request - Raised in Previous Month
+"Mark Colaluca"
+1.4: SOW Document
+Check whether sow document is attached or not
+
+Step 2:
+2.1 Check the Category under which the request is raised
+CL- OSC/TNM
+If it is a OSC then there must be a per material cost
+TNM model is like monthly salary fixed amount per resourse ( monthly cost for resourse)
+NON CL:
+No resourses involved here it is service based 
+Rental, OEM
+
+2.2 Check whether it is a renewal request or  not
+If it is renewal request then they will provide the old po number
+If it is a new resource then they wont provide any po number
+
+If it is a Renewal Request then we need to compare the existing request with the current request 
+If the request is raised under the same project ID then there is no issue	
+Else we need to check the PO END Date i.e old PO END DATE is past date and the new PO Start Date is Future Date then it is fine 
+If not we need to discuss it in daily calls then move forward
+
+
+ResourceRequestList this sharepoint list contains the all the line items regarding the resources involved in the project
+Resource Name, FTE, Cost Rate
+STEP 3: Cost and Revenue Projection
+If the ID is available in the ResourceRequestList that indicates that they have completed the step 3 
+If they haven’t completed the step 3 then we have to drop them an email indicating that they haven’t completed the step 3 
+
+Step 4: Validate whether the 3P cost is matched the Request or Not
+For this we can refere the WWD list
+The 3P cost must be non negative
+
+
+
+## steps provided by manager 
+ PO Request Validation Points 
+
+CL PO Requests: 
+
+Attached Documents Validation (Vendor SOW, Quote, Customer PO) 
+
+BPTool Request PO Start & End Date, Value, Currency should be matched with Quote/Vendor SOW. 
+
+BPTool Customer PO Number should be matched with Attached Customer PO Copy. 
+
+If it’s a Renewal PO request, they need to update Existing PO Number. 
+
+If DWO Approved “Yes”, They supposed to add DWO Approved email. 
+
+PO Start Date is in Past, they suppose to add comments under “ATF Justification” Why there is delay. 
+
+Project Margin should not be negative. 
+
+ 
+
+Non – CL PO Requests: (Resale/Rental/OEM/Royalty/R&D-License-OEM) 
+
+Attached Documents Validation (Quote, Customer PO) 
+
+Need to check the validity of the Quote. 
+
+If it’s a Renewal PO request, they need to update Existing PO Number. 
+
+If DWO Approved “Yes”, They supposed to add DWO Approved email. 
+
+PO Start Date is in Past, they supposed to add comments under “ATF Justification” Why there is delay. 
+
+For R&D PO Request, we suppose to add the Internal Project ID based on “PO For”. 
+
+Project Definition 
+
+Project Description 
+
+C/294629 
+
+ctg_PT_ENGG_NAVS 
+
+C/294632 
+
+ctg_PT_ENGG_Architecture Tool & Method 
+
+C/294633 
+
+ctg_PT_SUPPORT_BSS 
+
+C/294637 
+
+ctg_PT_SUPPORT_RI 
+
+C/294634 
+
+ctg_PT_SUPPORT_GMT 
+
+C/294628 
+
+ctg_PT_ENGG_BSS 
+
+C/294630 
+
+ctg_PT_ENGG_RI 
+
+C/304402 
+
+ctg_PT_ENGG_Continuous Impr & Compl 
+
+C/294631 
+
+ctg_PT_ENGG_SI 
+
+C/294636 
+
+ctg_PT_SUPPORT_NAVS 
+
+Project Margin should not be negative. 
+
+ 
+
+ 
+
+For OT – Over Time – Need to ask queries as below. 
+
+*Please share the OT timesheet and hourly rate how the value is calculated. 
+*What is the difference of base rate and Overtime effort rate. 
+*Justification for Overtime. 
+
+  
