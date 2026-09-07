@@ -1,11 +1,10 @@
-# steps that i came up with after the meeting
 Process Automation Steps (BP Tool VMT automation) 
 We receive a request for a specific region id – ex: N-Japan-H3573
 STEP 1: Chek the attached attachments and the BPTool Data Matching or Not
+Required documents – Vendor quote, SOW, Customer PO, NCRT(if balance is low we can ask for ncrt file)
 1.1 Quotation ID matching or not
 1.	Check what all the documents that they have uploaded
 2.	The quotation id is supposed(we can see the quotation number in PORLIST table) to match with the copy of the document provided
-
 1.2: PO start date and End date (PO Duration)
 1.	The Date present in the attached document should match with the dates present in the BPTOOL List
 Start Date,  End Date
@@ -13,7 +12,9 @@ Start Date,  End Date
 1.3: PO Value
 1.	The po value should match i.e in quotation and in the BPTool the PO values should match
 PO_value_LC
+How many resources involved total resource cost is matched or not while comparing to previous request
 
+If a new resource then we need to drop an email and ask for justification 
 1.4 Quote Validity
 •	If the date is future date then there is no problem 
 •	If the PO start Date is in past then it is ATF request we need write them the mail asking for the regional lead approval (why there is delay in raisinf the request as the PO start date is in past)
@@ -30,15 +31,15 @@ Check whether sow document is attached or not
 
 Step 2:
 2.1 Check the Category under which the request is raised
-CL- OSC/TNM
-If it is a OSC then there must be a per material cost
-TNM model is like monthly salary fixed amount per resourse ( monthly cost for resourse)
+CL- OSC/T&M
+If it is a OSC overall the will allocate the cost (not working based on FTE)
+T&M model is like monthly salary fixed amount per resourse ( monthly cost for resourse)
 NON CL:
-No resourses involved here it is service based 
-Rental, OEM
+No resourses involved here it is like service based 
+Rental, OEM, Royalty, Resale, R&D
 
 2.2 Check whether it is a renewal request or  not
-If it is renewal request then they will provide the old po number
+If it is renewal request then they will provide the old po number/ BPTOOL ID
 If it is a new resource then they wont provide any po number
 
 If it is a Renewal Request then we need to compare the existing request with the current request 
@@ -55,11 +56,59 @@ If they haven’t completed the step 3 then we have to drop them an email indica
 
 Step 4: Validate whether the 3P cost is matched the Request or Not
 For this we can refere the WWD list
-The 3P cost must be non negative
+The 3P cost must be inline with the planned 3P cost lc if it is not inline then we have to drop an email 
+We can calculate the overall cost = total amount of all the request raised under same project id
+
+If all things are ok then we go to the edit page and approve the request 
+
+For Non cl request no need to validate the resource we can just validate the quote and if the quote is valid then we can proceed 
+For cl requests we need to validate the  resource whether the resource is on hold or not and whether the resource can be allocated or not
 
 
 
-## steps provided by manager 
+
+
+
+Request Received
+▼
+Validate Documents
+├─ Quotation ID Match
+├─ PO Dates Match
+├─ PO Value Match
+├─ Quote Validity Check
+└─ SOW Attached
+▼
+Validate Request Type
+├─ CL (OSC/TNM)
+└─ NON-CL
+▼
+Check Renewal Logic
+├─ Same Project → Continue
+├─ Valid Date Gap → Continue
+└─ Else Daily Call Discussion
+▼
+Step 3 Completed?
+(ResourceRequestList)
+├─ No → Send Email
+└─ Yes
+▼
+Validate 3P Cost (WWD List)
+├─ Cost Mismatch → Send Email
+└─ Cost Match
+▼
+CL Request?
+│
+├─ Yes → Validate Resource Availability
+└─ No → Validate Quote Only
+│
+▼
+Approve Request
+
+
+
+
+
+the above is what i noted in the meeting and below is the documet that my manager sent
  PO Request Validation Points 
 
 CL PO Requests: 
@@ -150,5 +199,31 @@ For OT – Over Time – Need to ask queries as below.
 *What is the difference of base rate and Overtime effort rate. 
 *Justification for Overtime. 
 
-  <img width="333" height="1350" alt="image" src="https://github.com/user-attachments/assets/edcb5580-fe2c-43b3-839c-9859e5f69bce" />
+  
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
