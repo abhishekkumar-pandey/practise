@@ -150,4 +150,5 @@ For OT – Over Time – Need to ask queries as below.
 *What is the difference of base rate and Overtime effort rate. 
 *Justification for Overtime. 
 
-  
+  <img width="333" height="1350" alt="image" src="https://github.com/user-attachments/assets/edcb5580-fe2c-43b3-839c-9859e5f69bce" />
+
