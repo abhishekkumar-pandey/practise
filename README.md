@@ -204,7 +204,12 @@ For OT – Over Time – Need to ask queries as below.
 
 
 
+<img width="328" height="377" alt="{6399DA8E-F61C-4ADF-8869-B1FFE1F463A6}" src="https://github.com/user-attachments/assets/cd44328f-b614-49ab-9f15-a8e7c34a3433" />
 
+<img width="326" height="396" alt="{8EF7041C-5A77-4F45-A74B-DA66A64E73A0}" src="https://github.com/user-attachments/assets/9d7ec9b3-715c-4e61-9014-a7ec630c215d" />
+
+
+<img width="313" height="406" alt="{CADB4085-9FDF-4BB8-9F56-333E379EB06B}" src="https://github.com/user-attachments/assets/7e9258d5-7c5a-42a9-8af8-eada63f9321b" />
 
 
 
