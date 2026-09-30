@@ -1,156 +1,162 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>POR Chatbot Test</title>
-    <style>
-         #contentBox {MARGIN-LEFT: 10px;}
-			#contentBox {PADDING-TOP: 0px; }
-			#contentRow {PADDING-TOP: 0px; }
-			.ms-rtestate-field p, p.ms-rteElement-P{margin:-20px 0px 10px 0px;}
-			.ms-breadcrumb-top { margin-top:-20px;}
-			.ms-rte-layoutszone-inner{margin-top:-20px;}
-			#O365_MainLink_Settings {display:none;}
-			#O365_MainLink_Help_container {display:none;}
-			#s4-titlerow {
-			margin-top:0px;
-			margin-bottom:-15px;
-			}
-			#s4-ribbonrow {
-			display:none;
-			}
-			#sideNavBox{
-			display:none;
-			}
-			.ms-core-pageTitle {display:none;}
-			.ms-siteicon-img {
-			display:none;
-			}
-			.ms-srch-sb {
-			display:none;
-			}
-			.ms-listMenu-editLink {
-			display:none;
-			}
-			.ms-navedit-editLinksText{
-			display:none;
-			}
-			#s4-ribbonrow, .ms-cui-topBar2, .s4-notdlg, .s4-pr s4-ribbonrowhidetitle, .s4-notdlg noindex, #ms-cui-ribbonTopBars,  #s4-pr s4-notdlg s4-titlerowhidetitle, #s4-leftpanel-content {display:none !important;}
-			.s4-ca {margin-left:0px !important; margin-right:0px !important;}
-			.menu-item-text {font-size:15px;margin-left:90px;}
-        body {
-            font-family: Arial, sans-serif;
-            margin: 30px;
-        }
 
-        input {
-            width: 500px;
-            padding: 8px;
-        }
-
-        button {
-            padding: 8px 15px;
-        }
-
-        #result {
-            margin-top: 20px;
-            white-space: pre-wrap;
-            border: 1px solid #ccc;
-            padding: 15px;
-        }
-    </style>
-</head>
-<body>
-
-    <h2>POR Chatbot Test</h2>
-
-    <input
-        id="question"
-        type="text"
-        placeholder="Example: Show PO 9200141292"
-    >
-
-    <button onclick="askBot()">Ask</button>
-
-    <div id="result"></div>
-
-<script>
-
-async function askBot() {
-
-    const question =
-        document.getElementById("question").value.trim();
-
-    const result =
-        document.getElementById("result");
-
-    const match =
-        question.match(/\d{10}/);
-
-    if (!match) {
-        result.innerHTML =
-            "Please enter: Show PO 9200141292";
-        return;
-    }
-
-    const poNumber = match[0];
-
-    result.innerHTML = "Searching...";
-
-    const apiUrl =
-        "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG" +
-        "/_api/web/lists/getbytitle('PORLISTHCL')/items" +
-        "?$filter=PO_Number eq '" + poNumber + "'";
-
-    try {
-
-        const response = await fetch(apiUrl, {
-            headers: {
-                "Accept": "application/json;odata=nometadata"
+# for each get extractted filed action
+{
+    "foreachItems": [
+        {
+            "@odata.etag": "\"4\"",
+            "ItemInternalId": "3756",
+            "ID": 3756,
+            "Title": "C/292810",
+            "Region_ID": "N-EMEA-H3756",
+            "Edit_form": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/SitePages/Edit_1.aspx?=3756",
+            "Purchase_Type": "ROYALTY",
+            "Sub_purchase_Type": "Royalty Fees",
+            "Project_Code_Cost_Centre_Code": "C/292810",
+            "Project_Name": "Nokalva for Nettracker/Zain",
+            "Renewal_YES_No": "yes",
+            "Business_Justification": " This order accepts the terms and conditions of Software License Agreement Nos.\n11136K, 11188K between OSS Nokalva and Hewlett-Packard France, and as they may have\nbeen amended with Toolkit Riders and Amendments, the (“License”)",
+            "Billable_Non_Billable": "Billable",
+            "Details_of_Product_Services": " Annual Maintenance",
+            "Delivery_Country": "United States",
+            "PM_Email": "tdandrade@hcltech.com",
+            "Vendor_identified": "yes",
+            "Vendor_Name": "2400118594 - OSS NOKALVA INC",
+            "Vendor_Billing_cycle": "Yearly",
+            "Customeer_billing_Cycle": "Yearly",
+            "Standard_vendor_PT": "60",
+            "Payment_Term_with_Customer": 0,
+            "Payment_Term_with_Vendor": 0,
+            "Project_Country": "United States",
+            "Project_Region": "EMEA",
+            "POFor": "R_R&D_Navs_Sup",
+            "Customer_Name": "Nettracker/Zain",
+            "Proj_start_Date": "2025-09-30",
+            "Proj_end_date": "2027-12-30",
+            "Margin_x0025_": "0.95",
+            "Planned_Revenue": "387490.00",
+            "Planned_Revenue_LC": "387490.00",
+            "Over_all_cost_of_Project": "20000.00",
+            "Planned_cost_Lc": "20000.00",
+            "Planned_3P_LC": "20000.00",
+            "Cost_till_date": "20000.00",
+            "TP_Planned_Cost": "20000.00",
+            "Customer_PO_Number": "EF",
+            "Forecast_Revenue": 3669,
+            "Revenue_Billed_till_date_in_USD": "NaN",
+            "PO_Released_till_date": "NaN",
+            "TP_Consumed_till_date": "NaN",
+            "License_Ownership": "HCL",
+            "license_deployed_location": "USA",
+            "license_type_Perpetual_Exit": {
+                "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                "Id": 1,
+                "Value": "Exit"
             },
-            credentials: "include"
-        });
-
-        const data = await response.json();
-
-        if (!data.value || data.value.length === 0) {
-            result.innerHTML =
-                "No records found for PO " + poNumber;
-            return;
+            "license_type_Perpetual_Exit#Id": 1,
+            "License_number_IF_SINGLE_ATTACH_": "NA",
+            "Old_PO_Number": "N-AMS-H928",
+            "Quotation_Number": "4107",
+            "PO_Start_Date": "2026-09-30",
+            "PO_START_DATE_TEXT": "2026-10-01",
+            "PO_End_Date": "2027-09-29",
+            "PO_END_Date_Text": "2027-09-30",
+            "ATF": "yes",
+            "Approval_Counter": "2",
+            "po_Currency": "USD",
+            "PO_Value_LC": 3669,
+            "PO_Value_USD": "3669",
+            "Procurement_Quantity": 1,
+            "Created": "2026-09-29T14:05:36Z",
+            "Author": {
+                "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+                "Claims": "i:0#.f|membership|siddhartha.mukho@hcltech.com",
+                "DisplayName": "Siddhartha Mukhopadhyay",
+                "Email": "siddhartha.mukho@hcltech.com",
+                "Picture": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/_layouts/15/UserPhoto.aspx?Size=L&AccountName=siddhartha.mukho@hcltech.com",
+                "Department": "ERS CU-CSP-CTG PGMT GOV-BU OPS&PLANNING",
+                "JobTitle": "Sr. Business Analyst-Business Planning"
+            },
+            "Author#Claims": "i:0#.f|membership|siddhartha.mukho@hcltech.com",
+            "CreatedbyEmail": "siddhartha.mukho@hcltech.com",
+            "Modified": "2026-09-30T04:02:52Z",
+            "Editor": {
+                "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+                "Claims": "i:0#.f|membership|yuvaraj.e@hcltech.com",
+                "DisplayName": "Yuvaraj E [External]",
+                "Email": "yuvaraj.e@hcltech.com",
+                "Picture": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/_layouts/15/UserPhoto.aspx?Size=L&AccountName=yuvaraj.e@hcltech.com",
+                "Department": "ERS CU-CSP-CTG CLIENT MANAGEMENT-HQ",
+                "JobTitle": "Associate"
+            },
+            "Editor#Claims": "i:0#.f|membership|yuvaraj.e@hcltech.com",
+            "Validationsts": "VALIDATED",
+            "Validationcmmts": "Date/Value matches, valid quote added, Royalty - Non -CL.",
+            "Validateddate": "2026-09-29",
+            "Appr1Mail_trigger": "tdandrade@hcltech.com",
+            "fl_EmailtoVMTsent": "YES",
+            "fl_EmailtoAppr1sent": "YES",
+            "Flowstatus": "MAILTOAPPR1SENT",
+            "PreviousFlowstatus": "MAILTOVMTSENT",
+            "PODNAME": "Belloni, Stefania",
+            "POlocation": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/POcopies/.pdf",
+            "ReqType": "BP-TOOL-N",
+            "PORequestAttchmentsLink": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/AttachmentsLibrary/N-EMEA-H3756",
+            "Current_x0020_month": "Sep",
+            "Bill_to_country": "United States",
+            "CONSOLIDATEDID": "Sep-2400118594 - OSS NOKALVA INC-ROYALTY",
+            "CONSID": "Sep-2400118594 - OSS NOKALVA INC-United States-ROYALTY",
+            "Resource_mapping_link": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/SitePages/ResourceView.aspx?project=3756",
+            "Pending_HC": "1.00000000000000",
+            "ID_Copy": "3756",
+            "Current_Approver": "tdandrade@hcltech.com",
+            "PO_START_FISCAL_YEAR": "FY27",
+            "PO_START_FISCAL_QTR": "Q3",
+            "ATF_Reason": "Customer_PO_delay",
+            "PO_Start_Month": "Oct'26",
+            "Request_pending_Status": "BP_Tool_Approval_Pending",
+            "ProjectType": "EF",
+            "Prj_Company_code": "N/A",
+            "Productname_service_used": "Navs",
+            "ProjL4_Orgname": "AMS_projects",
+            "Reg_ID_formula": "N-EMEA-H3756",
+            "Editlinkpart1": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/SitePages/Edit_1.aspx?=",
+            "Editttt": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/SitePages/Edit_1.aspx?=",
+            "{Identifier}": "Lists%252fPORLISTHCL%252f3756_.000",
+            "{IsFolder}": false,
+            "{Thumbnail}": {
+                "Full": null,
+                "Large": null,
+                "Medium": null,
+                "Small": null
+            },
+            "{Link}": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG/_layouts/15/listform.aspx?PageType=4&ListId=e7b630ef%2D6787%2D4dca%2D87ab%2Da1b73de99ba1&ID=3756&ContentTypeID=0x0100C4226771931E654BA41B6535A1A372C1",
+            "{Name}": "C/292810",
+            "{FilenameWithExtension}": "C/292810",
+            "{Path}": "Lists/PORLISTHCL/",
+            "{FullPath}": "Lists/PORLISTHCL/3756_.000",
+            "{ContentType}": {
+                "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedContentType",
+                "Id": "0x0100C4226771931E654BA41B6535A1A372C1",
+                "Name": "Item"
+            },
+            "{ContentType}#Id": "0x0100C4226771931E654BA41B6535A1A372C1",
+            "{HasAttachments}": false,
+            "{VersionNumber}": "4.0"
         }
-
-        const item = data.value[0];
-
-        result.innerHTML =
-`
-PO Number: ${item.PO_Number || "N/A"}
-
-PR Number: ${item.PR_Number || "N/A"}
-
-Vendor:
-${item.Vendor_Name || "N/A"}
-
-Customer:
-${item.Customer_Name || "N/A"}
-
-Project:
-${item.Project_Name || "N/A"}
-
-Country:
-${item.Project_Country || "N/A"}
-
-Status:
-${item.Flowstatus || "N/A"}
-`;
-
-    }
-    catch (e) {
-
-        result.innerHTML =
-            "Error:<br>" + e.message;
-    }
+    ]
 }
 
-</script>
 
-</body>
-</html>
+
+## Get BPTool Record
+{
+    "host": {
+        "connectionReferenceName": "shared_sharepointonline",
+        "operationId": "GetItems"
+    },
+    "parameters": {
+        "dataset": "https://hclo365nam.sharepoint.com/sites/HPE-teams-BPTOOL_NCTG",
+        "table": "e7b630ef-6787-4dca-87ab-a1b73de99ba1",
+        "$filter": "Region_ID eq 'N-EMEA-H3756'"
+    }
+}
