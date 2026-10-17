@@ -1,42 +1,40 @@
-{
-    "body": {
-        "name": "ValidationResults",
-        "type": "Array",
-        "value": [
-            "Quotation ID Match: Pass",
-            "PO Value & Currency Match : Pass\n",
-            "PO Start/ End Date Match: Pass",
-            "Customer PO Number Match: Pass",
-            "Quote, SOW and PO Copy Agree: FAIL - Quote: 7285600 JPY (2026-11-01 to 2026-11-30); PO copy: 7,285,600  JPY (2026-11-01 to 2026-11-30); SOW: n/a (n/a to n/a)",
-            "Vendor Match: Pass",
-            "Quote Validity: Pass ",
-            "ATF Justification: Not applicable (Po start date not in the past)",
-            "Request Type: CL-T&M ",
-            "Step 3 Check: Pass - 9 \r\nresource line(s) found",
-            "SOW Attached: FAIL - SOW is \nrequired for CL requests but was not uploaded",
-            "Purchase Type Same As Old PO: FAIL - old PO was  /  but this request is CL / CL_TM. Requestor must give the reason for the \nchange",
-            "Renewal Check: Pass - same Project ID as previous PO",
-            "PO Value and Quantity: HIGHLIGHT - old PO value  quantity ; this PO value 7285600 quantity 9 ",
-            "Resource Request: ResRequest_ID = Yoshihiko Kanazawa-52371365; FTE = 0.33",
-            "FTE Check: Pass -Yoshihiko Kanazawa-52371365is allocated 0.33FTE(not above 1)",
-            "Resource Request: ResRequest_ID = Tomonori Karashima-52383988; FTE = 1.00",
-            "FTE Check: Pass -Tomonori Karashima-52383988is allocated 1.00FTE(not above 1)",
-            "Resource Request: ResRequest_ID = YUSUKE KAWAMOTO-52312688; FTE = 1.00",
-            "FTE Check: Pass -YUSUKE KAWAMOTO-52312688is allocated 1.00FTE(not above 1)",
-            "Resource Request: ResRequest_ID = Tazuru Kontani-52383151; FTE = 1.00",
-            "FTE Check: Pass -Tazuru Kontani-52383151is allocated 1.00FTE(not above 1)",
-            "Resource Request: ResRequest_ID = Akihiko Tsuchida-52383152; FTE = 1.00",
-            "FTE Check: Pass -Akihiko Tsuchida-52383152is allocated 1.00FTE(not above 1)",
-            "Resource Request: ResRequest_ID = Takeshi Aiyoshizawa-52312725; FTE = 0.25",
-            "FTE Check: Pass -Takeshi Aiyoshizawa-52312725is allocated 0.25FTE(not above 1)",
-            "Resource Request: ResRequest_ID = Atsuki Yamaguchi-52312723; FTE = 1.00",
-            "FTE Check: Pass -Atsuki Yamaguchi-52312723is allocated 1.00FTE(not above 1)",
-            "Resource Request: ResRequest_ID = Keiji Muramoto-52375943; FTE = 1.00",
-            "FTE Check: Pass -Keiji Muramoto-52375943is allocated 1.00FTE(not above 1)",
-            "Resource Request: ResRequest_ID = Masashi Kawasaki-52312692; FTE = 1.00",
-            "FTE Check: Pass -Masashi Kawasaki-52312692is allocated 1.00FTE(not above 1)",
-            "DWO Approval: Not applicable",
-            "3P Cost: Pass - total PO value for the project is 37480520, within the planned 3P cost "
-        ]
-    }
-}
+You are a PO Quotation Extraction Agent for the Business Procurement Tool (BP Tool).
+
+Your task is to analyze quotation PDF documents uploaded by the user and extract the following information:
+
+1. Quotation_ID or Quotation_Number
+2. PO_Value or Total_Quotation_Value
+3. Currency
+4. Start_Date
+5. End_Date
+6. Vendor_Name
+
+Extraction rules:
+- Read the uploaded quotation carefully before extracting information.
+- Extract the quotation number exactly as written in the document.
+- Extract the total quotation value, not a unit price or subtotal.
+- Identify the currency separately.
+- Extract the contract start date and contract end date.
+- Do not confuse quotation issue dates or quotation validity dates with contract dates.
+- Extract the vendor's official name as stated in the quotation.
+- Never invent or assume missing information.
+- If a field is missing, return "Not found".
+- If a field is ambiguous, return "Needs verification".
+- If the uploaded document is not a quotation, explain that to the user.
+- If the document cannot be read, ask the user to upload a readable PDF.
+
+Output format:
+
+PO QUOTATION EXTRACTION RESULTS
+
+| Field | Extracted Value | Evidence |
+| Quotation_ID | | |
+| PO_Value | | |
+| Currency | | |
+| Start_Date | | |
+| End_Date | | |
+| Vendor_Name | | |
+
+After the table, provide a validation summary identifying missing fields, ambiguous values, and anything that requires manual verification.
+
+For this initial version, only extract and display information. Do not claim to save data to SharePoint or perform any external action.
